@@ -51,8 +51,8 @@ public class LoginFormBean {
         FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
         FacesMessage facesMessage = new FacesMessage(FacesMessage.SEVERITY_INFO, "Sesion Cerrada", "Sesion Cerrada");
         FacesContext.getCurrentInstance().addMessage(null, facesMessage);
-        String resultado = "/login";
-        //String resultado = "login?faces-redirect=true";
+        String resultado = "/index";
+        //String resultado = "index?faces-redirect=true";
         return resultado;
     }
 
