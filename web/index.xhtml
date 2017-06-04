@@ -19,7 +19,10 @@
                                 <p:inputText id="nombreUsuario" required="true" value="#{loginFormBean.unUsuario}" />
                                 <p:outputLabel for="passUsuario" value="Contraseña: " />
                                 <p:password id="passUsuario" required="true" value="#{loginFormBean.unaContraseña}" />
-                                <p:commandButton id="botonValidar" value="Validar Usuario" update="frmLogin" action="#{loginFormBean.validarUsuario()}"/>
+                                <p:commandButton id="botonValidar" 
+                                                 value="Validar Usuario" 
+                                                 update="frmLogin" 
+                                                 action="#{loginFormBean.validarUsuario()}"/>
                             </h:panelGrid>
                         </h:form>
                     </p:panel>

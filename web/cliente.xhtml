@@ -13,8 +13,8 @@
             <ui:define name="content">
                 <p:growl id="grwMensajeClientes" showDetail="true" 
                          showSummary="false" sticky="false"></p:growl>
-                <p:panel id="pnlClientes" header="Tabla de Clientes"> 
-                    <!--rendered="#{loginFormBean.validarUsuario()}" -->
+                <p:panel id="pnlClientes" header="Tabla de Clientes" 
+                         rendered="#{loginFormBean.verificarSesion()}" >
                     <h:form id="frmClientes" enctype="multipart/form-data">
                         <p:dataTable id="tblClientes" 
                                      var="c" 
